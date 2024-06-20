@@ -12,6 +12,7 @@ public class ViagensNacional extends  Viagens{
     public ViagensNacional() {
     }
 
+
     public String getEstado() {
         return Estado;
     }
