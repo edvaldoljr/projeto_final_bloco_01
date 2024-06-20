@@ -24,6 +24,7 @@ public class ViagensNacional extends  Viagens{
     @Override
     public void visualizarViagem() {
         System.out.println("Tipo de Viagem: Nacional");
+        System.out.println("Numero de Pacote: " + getNumeroPacote());
         System.out.println("Nome Viagente: " + getNomeComprador());
         System.out.println("Destino: " + getDestinoPais());
         System.out.println("Estado: " + getEstado());
