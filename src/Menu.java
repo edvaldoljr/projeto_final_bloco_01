@@ -31,7 +31,6 @@ public class Menu {
             }
 
             if (opcao == 7) {
-                //System.out.println(Cores.TEXT_WHITE_BOLD + "\nBanco do Brazil com Z - O seu Futuro começa aqui!");
                 System.out.println("Saindo do sistema. Até mais!");
                 leia.close();
                 System.exit(0);
