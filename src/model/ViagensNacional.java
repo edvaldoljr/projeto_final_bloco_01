@@ -4,8 +4,8 @@ public class ViagensNacional extends  Viagens{
 
     private String Estado;
 
-    public ViagensNacional(String destinoPais, long numeroPacote, String data, String hora, String estado) {
-        super(destinoPais, numeroPacote, data, hora);
+    public ViagensNacional(String nomeComprador,String destinoPais, long numeroPacote, String data, String hora, String estado) {
+        super(nomeComprador, destinoPais, numeroPacote, data, hora);
         Estado = estado;
     }
 
@@ -23,6 +23,7 @@ public class ViagensNacional extends  Viagens{
     @Override
     public void visualizarViagem() {
         System.out.println("Tipo de Viagem: Nacional");
+        System.out.println("Nome Viagente: " + getNomeComprador());
         System.out.println("Destino: " + getDestinoPais());
         System.out.println("Estado: " + getEstado());
         System.out.println("Data: " + getData());

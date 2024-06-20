@@ -1,12 +1,14 @@
 package model;
 
 public abstract class Viagens {
+    private String nomeComprador;
     private String destinoPais;
     private long numeroPacote;
     private String data;
     private String hora;
 
-    public Viagens(String destinoPais, long numeroPacote, String data, String hora) {
+    public Viagens(String nomeComprador,String destinoPais, long numeroPacote, String data, String hora) {
+        this.nomeComprador = nomeComprador;
         this.destinoPais = destinoPais;
         this.numeroPacote = numeroPacote;
         this.data = data;
@@ -14,6 +16,14 @@ public abstract class Viagens {
     }
 
     public Viagens() {
+    }
+
+    public String getNomeComprador() {
+        return nomeComprador;
+    }
+
+    public void setNomeComprador(String nomeComprador) {
+        this.nomeComprador = nomeComprador;
     }
 
     public String getDestinoPais() {
